@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ratings & Reviews</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🛍 Product Ratings & Reviews</h1>
+
+  <div id="product-list" class="product-list"></div>
+
+  <hr/>
+
+  <h2>📨 Submit a Rating</h2>
+  <form id="rating-form">
+    <select id="product-id" required>
+  <option value="">-- Select a product --</option>
+</select>
+
+    <input type="number" id="user-id" placeholder="User ID" required />
+    <input type="number" id="rating" placeholder="Rating (1-5)" required min="1" max="5" />
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
